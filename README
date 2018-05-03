@@ -1,0 +1,17 @@
+1)Requirements : gym,numpy,argparse,matplotlib
+	
+2)usage:
+	
+	usage: rollout.py [-h] [--alpha ALPHA] [--gamma GAMMA] [--episodes EPISODES]
+                  [--env ENV] [--render] --batchSize BATCHSIZE
+
+	ALPHA : learning rate [Default:0.5]
+	GAMMA : Discount [Default:0.9]
+	--render : to render the game for last 10% of the episodes
+	ALGO : Q/SARSA/SARSAlam
+	ENV : [chakra/visham]
+	
+2)example ,To run a game with default settings on grid-A, to render the enviroment and show learnt policy at the end
+	
+	python rollout.py --episodes 2000 --render --env chakra
+		
